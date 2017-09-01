@@ -1,0 +1,8 @@
+version: '2'
+volumes:
+  sync-volume:
+    external: true
+services:
+  app:
+    volumes:
+      - sync-volume:/code:nocopy

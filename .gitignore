@@ -1,0 +1,8 @@
+
+# docker
+.docker-sync
+*.unison.tmp
+
+# yarn
+/yarn-error.log
+/node_modules

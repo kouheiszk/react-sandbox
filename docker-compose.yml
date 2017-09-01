@@ -1,0 +1,14 @@
+version: '2'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: dockerfiles/Dockerfile
+    environment:
+      RAILS_ENV: development
+    ports:
+      - '8080:8080'
+    volumes:
+      - .:/code
+    tty: true
+    stdin_open: true
